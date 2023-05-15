@@ -15,9 +15,9 @@
       --color-bg: #EDECDA;
       --color-bg-variant: #A80F72;
       --color-primary: #ac4ab7;
-      --color-primary-variant: #E9D7EB;
+      --color-primary-variant: #BFBFE2;
       --color-dark: #27231d;
-      --color-light: #d3cccc;
+      --color-light: #a49e9e;
 
       --transition: all 400ms ease;
 
@@ -63,6 +63,7 @@
 
   section {
       margin-top: 8rem;
+      height: 100vh;
   }
 
   section>h2,
