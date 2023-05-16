@@ -32,14 +32,14 @@ const About = () => {
                             <small>Ironhack Linbon</small>
                         </article>
 
-                        <article className='about__card'>
+                        <article className='about__card language'>
                             <MdLanguage className='about__icon' />
                             <h5>Languages</h5>
                             <small>Portuguese & English</small>
                         </article>
                     </div>
 
-                    <p>My background in marketing, combined with my expertise in web design, has provided me with a holistic understanding of how clients interact with websites, apps, and social media platforms. I see web development as a natural progression of my skills and experience. During my Master's in New Media and Web Practices, I was able to explore my passion for web development, building websites with Figma, HTML and CSS. Following that, I enrolled in a programming bootcamp where I honed my skills in JavaScript, Node.js, React, and other web development technologies.</p>
+                    <p>I see web development as a natural progression of my experience in digital marketing. During my Master's in New Media and Web Practices, I was able to explore my passion for web development, building websites with Figma, HTML and CSS. Following that, I enrolled in a programming bootcamp where I honed my skills in JavaScript, Node.js, React, and other web development technologies.</p>
                     <a href="#contact" className='btn btn-primary'>Let's Talk</a>
                 </div>
             </div>
