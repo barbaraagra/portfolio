@@ -41,6 +41,8 @@
     margin-left: 1rem;
 }
 
+/* MEDIA QUERIES FOR SMALL DEVICES */
+
 @media screen and (max-width: 600px) {
     .portfolio__container__container {
         grid-template-columns: 1fr 1fr;

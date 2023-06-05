@@ -36,7 +36,8 @@
 
   body {
       font-family: 'Mulish', sans-serif;
-      background: var(--color-bg);
+      /*  background: var(--color-bg); */
+      background: whitesmoke;
       color: var(--color-dark);
       line-height: 1.7;
   }
