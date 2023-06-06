@@ -50,7 +50,6 @@
     background: transparent;
     border: 1px solid var(--color-bg-variant);
     color: var(--color-bg-variant);
-    cursor: pointer;
 }
 
 .about__icon {

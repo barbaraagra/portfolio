@@ -1,9 +1,9 @@
 header {
-    height: 50vh;
+    height: 100vh;
     padding-top: 2rem;
     /*     overflow: hidden;
  */
-    margin-bottom: 450px;
+    margin-bottom: 12rem;
 
 }
 
@@ -27,6 +27,7 @@ header {
     gap: 0.8rem;
     position: absolute;
     left: 0;
+    bottom: 2rem;
 }
 
 .header__socials::after {
@@ -43,7 +44,7 @@ header {
     width: 20rem;
     height: 26rem;
     position: absolute;
-    left: calc(50% - 11rem);
+    left: calc(50% - 10rem);
     margin-top: 3rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
@@ -64,6 +65,7 @@ header {
 @media screen and (max-width: 1024px) {
     header {
         height: 68vh;
+        margin-bottom: 0;
     }
 }
 
@@ -72,6 +74,7 @@ header {
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
+        margin-bottom: 5px;
     }
 
     .header__socials,

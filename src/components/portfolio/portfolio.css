@@ -1,7 +1,9 @@
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .portfolio__item {
@@ -29,13 +31,19 @@
 }
 
 .portfolio__item h4 {
-    color: var(--color-bg);
+    color: var(--color-dark);
     margin-bottom: 1rem;
     text-align: center;
 }
 
+.portfolio__item p {
+    text-align: center;
+}
+
+
 .portfolio__item-cta {
     display: flex;
+    justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;

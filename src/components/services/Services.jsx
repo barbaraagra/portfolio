@@ -17,19 +17,19 @@ const Services = () => {
                     <ul className="service__list">
                         <li>
                             <BsCheck className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Creating user personas, user flows, and information architecture.</p>
                         </li>
                         <li>
                             <BsCheck className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Designing wireframes, prototypes, and interactive mockups using Figma.</p>
                         </li>
                         <li>
                             <BsCheck className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Creating visually appealing and engaging user interfaces.</p>
                         </li>
                         <li>
                             <BsCheck className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Applying branding and maintaining design consistency throughout the product.</p>
                         </li>
                     </ul>
                 </article>
@@ -42,19 +42,19 @@ const Services = () => {
                     <ul className="service__list">
                         <li>
                             <BsCheck className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Translating design mockups into functional web pages.</p>
                         </li>
                         <li>
                             <BsCheck className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Building server-side logic and databases to support the functionality of a website.</p>
                         </li>
                         <li>
                             <BsCheck className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Developing APIs for communication between the front-end and back-end components.</p>
                         </li>
                         <li>
                             <BsCheck className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Conducting regular maintenance tasks and debugging.</p>
                         </li>
                     </ul>
                 </article>
@@ -67,19 +67,19 @@ const Services = () => {
                     <ul className="service__list">
                         <li>
                             <BsCheck className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Developing and implementing a content strategy.</p>
                         </li>
                         <li>
                             <BsCheck className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Planning and scheduling content calendars to ensure consistent posting.</p>
                         </li>
                         <li>
                             <BsCheck className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Monitoring and responding to comments, messages, and mentions.</p>
                         </li>
                         <li>
                             <BsCheck className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Analyzing social media metrics, such as engagement, reach, and conversion rates.</p>
                         </li>
                     </ul>
                 </article>
