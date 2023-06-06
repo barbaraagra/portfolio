@@ -15,7 +15,7 @@ const About = () => {
             <div className="container about__container">
                 <div className="about__me">
                     <div className="about__me-image">
-                        <img src={AboutMe} alt="About Image" />
+                        <img src={AboutMe} alt="Barbara Agra" />
                     </div>
                 </div>
                 <div className="about__content">
@@ -39,8 +39,8 @@ const About = () => {
                         </article>
                     </div>
 
-                    <p>I see web development as a natural progression of my experience in digital marketing. During my Master's in New Media and Web Practices, I was able to explore my passion for web development, building websites with Figma, HTML and CSS. Following that, I enrolled in a programming bootcamp where I honed my skills in JavaScript, Node.js, React, and other web development technologies.</p>
-                    <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+                    <p>After over 10 years working with digital marketing I'm ready to merge into the tech field. During my Master's in New Media and Web Practices, I was able to explore my passion for web development, building websites with Figma, HTML and CSS. Following that, I enrolled in a programming bootcamp where I honed my skills in full stack development technologies.</p>
+                    {/*   <a href="#contact" className='btn btn-primary'>Let's Talk</a> */}
                 </div>
             </div>
         </section>

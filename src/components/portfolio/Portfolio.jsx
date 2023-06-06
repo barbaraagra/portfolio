@@ -11,7 +11,7 @@ const data = [
     {
         id: 1,
         image: img1,
-        title: "Dino Era",
+        title: "DINO ERA",
         description:
             "HTML | CSS | JavaScript",
         github: "https://github.com/barbaraagra/Dino_Era",
@@ -58,7 +58,7 @@ const data = [
         image: img6,
         title: "TEXT SUMMARIZER",
         description:
-            "React | Tailwind",
+            "React | Tailwind | API",
         github: "https://github.com/barbaraagra/ai-text_summarizer",
         demo: "https://ai-text-summarizer-pq17ymf2l-barbaraagra.vercel.app/",
     }

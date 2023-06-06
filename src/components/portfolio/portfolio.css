@@ -38,23 +38,25 @@
 
 .portfolio__item p {
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 
 .portfolio__item-cta {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 1rem;
-    margin-left: 1rem;
 }
 
 /* MEDIA QUERIES FOR SMALL DEVICES */
 
 @media screen and (max-width: 600px) {
-    .portfolio__container__container {
+    .portfolio__container {
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .portfolio__container__container>div {

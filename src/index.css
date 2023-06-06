@@ -17,7 +17,7 @@
       --color-primary: #ac4ab7;
       --color-primary-variant: #BFBFE2;
       --color-dark: #27231d;
-      --color-light: #cfc8c8;
+      --color-light: #f0ecec;
 
       --transition: all 400ms ease;
 
@@ -72,7 +72,7 @@
   section>h2,
   section>h5 {
       text-align: center;
-      color: var(--color-light);
+      color: #6a6865;
   }
 
   section>h2 {
@@ -81,7 +81,7 @@
   }
 
   .text-light {
-      color: var(--color-light);
+      color: #6a6865;
   }
 
   a {

@@ -46,11 +46,11 @@ const Services = () => {
                         </li>
                         <li>
                             <BsCheck className='service__list-icon' />
-                            <p>Building server-side logic and databases to support the functionality of a website.</p>
+                            <p>Building server-side logic and databases to support the website.</p>
                         </li>
                         <li>
                             <BsCheck className='service__list-icon' />
-                            <p>Developing APIs for communication between the front-end and back-end components.</p>
+                            <p>Developing APIs for communication between the frontend and back-end components.</p>
                         </li>
                         <li>
                             <BsCheck className='service__list-icon' />
