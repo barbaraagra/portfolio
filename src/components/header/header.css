@@ -1,15 +1,24 @@
-header {
-    height: 100vh;
-    padding-top: 2rem;
-    /*     overflow: hidden;
- */
-    margin-bottom: 12rem;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    margin: 0;
+    background-color: #fff;
+}
 
+header {
+    width: 100%; /* Garante que o header ocupe a largura total */
+    padding-top: 2rem;
+    margin-bottom: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza os conteúdos verticalmente */
+    align-items: center; /* Centraliza os conteúdos horizontalmente */
 }
 
 .header__container {
     text-align: center;
-    height: 100%;
     position: relative;
 }
 
@@ -21,13 +30,13 @@ header {
 }
 
 .header__socials {
+    position: absolute;
+    right: 37rem; /* Coloca na lateral esquerda */
+    bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 2rem;
 }
 
 .header__socials::after {
@@ -38,47 +47,38 @@ header {
 }
 
 /* PICTURE */
-
 .me {
     background: linear-gradient(var(--color-primary), transparent);
-    width: 20rem;
-    height: 26rem;
-    position: absolute;
-    left: calc(50% - 10rem);
-    margin-top: 3rem;
-    border-radius: 12rem 12rem 0 0;
+    width: 30rem; /* Largura ajustada */
+    height: 20rem; /* Altura ajustada */
+    border-radius: 0 2rem 0 2rem; /* Canto arredondado com raio de 2rem em todos os cantos */
     overflow: hidden;
-    padding: 3rem 0 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem; /* Adiciona espaçamento para o alinhamento vertical */
+}
+
+.me img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o container sem distorcer */
 }
 
 .scroll__down {
     position: absolute;
-    right: -2.5rem;
+    left: 35rem;
     bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
+    white-space: nowrap; /* Impede a quebra de linha */
 }
 
-/* MEDIA QUERIES FOR MEDIUM DEVICES */
-
-@media screen and (max-width: 1024px) {
+/* Responsividade para telas de celular */
+@media screen and (max-width: 768px) {
     header {
-        height: 68vh;
-        margin-bottom: 0;
-    }
-}
-
-/* MEDIA QUERIES FOR SMALL DEVICES */
-
-@media screen and (max-width: 600px) {
-    header {
-        height: 100vh;
-        margin-bottom: 5px;
+        margin-bottom: 2rem; /* Reduz o espaçamento em telas menores */
     }
 
-    .header__socials,
-    .scroll__down {
-        display: none;
-    }
 }
