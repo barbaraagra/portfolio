@@ -18,9 +18,11 @@ header {
 }
 
 .header__container {
+    position: relative; /* Necessário para que elementos absolutos funcionem */
     text-align: center;
-    position: relative;
+    overflow: visible; /* Garante que nada seja escondido */
 }
+
 
 .cta {
     margin-top: 1rem;
@@ -68,12 +70,13 @@ header {
 .scroll__down {
     position: absolute;
     bottom: 5rem;
-    left: 125%; 
+    left: 120%; 
     transform: translateX(-50%) rotate(90deg); 
     font-weight: 300;
     font-size: 0.9rem;
     white-space: nowrap; 
-    color: #A80F72; 
+    color: #A80F72;
+    display: block;
 }
 
 /* Responsividade para telas de celular */

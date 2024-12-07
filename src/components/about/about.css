@@ -6,8 +6,8 @@
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
-    margin: 0 auto; /* Garante centralização */
-    padding: 0; /* Remove qualquer padding padrão */
+    margin: 0 auto;
+    padding: 0; 
 }
 
 .about__me {
@@ -96,11 +96,12 @@
 
 @media screen and (max-width: 600px) {
     .about__container {
-        grid-template-columns: 1fr; /* Garante alinhamento único em telas pequenas */
-        gap: 0; /* Remove espaçamento entre colunas */
-        margin: 0 auto; /* Centraliza o grid */
-        padding: 0 1rem; /* Adiciona espaçamento lateral para evitar bordas coladas */
+        grid-template-columns: 1fr;
+        gap: 0; 
+        padding: 0.5rem;
+        margin: 0 auto;
     }
+
 
     .about__me {
         width: 65%;
@@ -118,7 +119,7 @@
     }
 
     .about__content p {
-        margin: 1.5rem 0.5rem;
+        margin: 1.5rem auto;
     }
 
     .language {
