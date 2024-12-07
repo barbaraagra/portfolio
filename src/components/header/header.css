@@ -2,19 +2,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    min-height: 100vh; 
     margin: 0;
     background-color: #fff;
 }
 
 header {
-    width: 100%; /* Garante que o header ocupe a largura total */
+    width: 100%;
     padding-top: 2rem;
     margin-bottom: 12rem;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza os conteúdos verticalmente */
-    align-items: center; /* Centraliza os conteúdos horizontalmente */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .header__container {
@@ -31,7 +31,7 @@ header {
 
 .header__socials {
     position: absolute;
-    right: 37rem; /* Coloca na lateral esquerda */
+    right: 37rem;
     bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -49,36 +49,41 @@ header {
 /* PICTURE */
 .me {
     background: linear-gradient(var(--color-primary), transparent);
-    width: 30rem; /* Largura ajustada */
-    height: 20rem; /* Altura ajustada */
-    border-radius: 0 2rem 0 2rem; /* Canto arredondado com raio de 2rem em todos os cantos */
+    width: 30rem;
+    height: 20rem;
+    border-radius: 0 2rem 0 2rem;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem; /* Adiciona espaçamento para o alinhamento vertical */
+    margin-top: 2rem;
 }
 
 .me img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem preencha o container sem distorcer */
+    object-fit: cover;
 }
 
 .scroll__down {
     position: absolute;
-    left: 35rem;
     bottom: 5rem;
-    transform: rotate(90deg);
+    left: 125%; 
+    transform: translateX(-50%) rotate(90deg); 
     font-weight: 300;
     font-size: 0.9rem;
-    white-space: nowrap; /* Impede a quebra de linha */
+    white-space: nowrap; 
+    color: #A80F72; 
 }
 
 /* Responsividade para telas de celular */
 @media screen and (max-width: 768px) {
     header {
-        margin-bottom: 2rem; /* Reduz o espaçamento em telas menores */
+        margin-bottom: 2rem; 
+        
+    }
+    .scroll__down{
+        display: none;
     }
 
 }
