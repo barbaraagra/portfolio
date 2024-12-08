@@ -4,15 +4,17 @@
 
 .about__container {
     display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
-    margin: 0 auto;
-    padding: 0; 
+    grid-template-columns: 1fr 1fr; /* Mantém 50% da largura para cada coluna */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 2rem; /* Ajuste de espaço entre as colunas */
+    margin: 2rem;
 }
 
 .about__me {
-    width: 100%;
-    aspect-ratio: 1/1;
+    width: 100%; /* Garante que ocupe 100% do espaço disponível na coluna */
+    max-width: 350px; /* Limita o tamanho máximo da foto */
+    margin: 0 auto; /* Centraliza em telas menores */
+    aspect-ratio: 1/1; /* Mantém a proporção quadrada */
     border-radius: 2rem;
     background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
     display: grid;
@@ -20,6 +22,8 @@
 }
 
 .about__me-image {
+    width: 100%; /* Adapta-se ao tamanho do pai */
+    height: auto; /* Mantém a proporção */
     border-radius: 2rem;
     overflow: hidden;
     transform-origin: rotate(10deg);
@@ -33,15 +37,16 @@
 .about__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Três cards por linha em telas maiores */
-    gap: 1rem; /* Reduzido para espaçar menos */
-    margin: 0 auto; /* Garante centralização */
+    gap: 1rem; 
+    margin: 0 auto; 
+    padding: 0 2rem 0 1rem;
 }
 
 .about__card {
     background: var(--color-primary-variant);
     color: var(--color-dark);
     border-radius: 1rem;
-    padding: 0.5rem; /* Reduzido para diminuir o tamanho dos cards */
+    padding: 0.5rem;
     text-align: center;
     transition: var(--transition);
 }
@@ -63,7 +68,7 @@
 }
 
 .about__content p {
-    margin: 2rem 0 2.6rem;
+    margin: 2rem 1rem 2.6rem 0;
     color: var(--color-dark);
     text-align: center;
 }

@@ -14,6 +14,7 @@
     border: 2px solid transparent;
     transition: all 0.3s ease-in-out;
     position: relative;
+    margin-top: 0.5rem;
 }
 
 .portfolio__item:hover {
@@ -39,6 +40,7 @@
     color: #663399;
     margin-bottom: 0.5rem;
 }
+
 
 .portfolio__item p {
     text-align: center;

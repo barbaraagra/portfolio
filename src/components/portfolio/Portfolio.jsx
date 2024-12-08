@@ -7,7 +7,6 @@ import img4 from '../../assets/agradesign.png';
 import img5 from '../../assets/portfolio5.png';
 import img6 from '../../assets/portfolio1.png';
 
-// Dados organizados
 const projects = [
 {
     id: 1,
@@ -16,7 +15,7 @@ const projects = [
     description:
         "A wellness app connecting people passionate about sports, healthy eating, and active living—build community, share goals, and stay inspired.",
     demo: "https://embed.figma.com/proto/S322tvnhTMc225FMek2CQf/Gooday?page-id=0%3A1&node-id=33-185&node-type=frame&viewport=197%2C200%2C0.08&scaling=scale-down&content-scaling=fixed&starting-point-node-id=87%3A854&embed-host=share",
-    design: "https://figma.com/prototype/Gooday-Mobile-App",
+    design: "https://www.behance.net/gallery/213351813/Gooday",
     btnDesign: "Design",
     btnDemo: "Demo",
 },
@@ -27,20 +26,20 @@ const projects = [
         title: "MOON MAGIC APPLE WATCH",
         description:
             "Apple Watch app that helps you stay in tune with the moon. It shows the current moon phase and shares daily inspirations based on lunar energy. With a simple and beautiful design, it’s perfect for anyone who loves a little moonlight magic in their day.",
-        demo: "https://wannago.cyclic.app/",
-        design: "https://figma.com/prototype/Moon-Magic-Design",
+        demo: "https://www.figma.com/proto/3dOQFmIpRLlRMuBaPqetJb/Moon-Magic?page-id=0%3A1&node-id=44-28&node-type=frame&viewport=214%2C188%2C0.33&t=ydcPuNmgSCF2GrMz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=11%3A143",
+        design: "https://www.behance.net/gallery/209594333/Moon-Magic",
         btnDesign: "Design",
         btnDemo: "Demo",
     },
     {
         id: 3,
         image: img3,
-        title: "Fuurever Home",
+        title: "FUUREVER HOME",
         description:
             "An app designed to connect pets in need with their forever families. It simplifies the adoption process by matching users with pets based on preferences and lifestyle, making it easier to find the perfect companion.",
-            design: "https://figma.com/prototype/Fuurever-Home",
-        demo: "https://nomadic-app.netlify.app/",
-        code: "https://github.com/barbaraagra/nomadic-client",
+        design: "https://www.behance.net/gallery/209850913/Fuurever-Home",
+        demo: "https://www.figma.com/proto/8AZeoKz3MEtqdKMZWzQj9W/Fuurever-Home?page-id=0%3A1&node-id=1-3&node-type=frame&viewport=322%2C457%2C0.24&t=wBprkKNfbVO0vtYv-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A4",
+        code: "https://github.com/barbaraagra/fuurever-home",
         btnDesign: "Design",
         btnDemo: "Demo",
         btnCode: "Code",
