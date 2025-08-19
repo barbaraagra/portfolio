@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import AboutMe from '../../assets/aboume_pic.png';
+import AboutMe from '../../assets/about_pic1.png';
 import { FaAward } from 'react-icons/fa';
 import { FaGraduationCap } from 'react-icons/fa';
 import { MdLanguage } from 'react-icons/md';

@@ -1,79 +1,137 @@
+/* ====== CONTAINER EM BENTO GRID ====== */
 .portfolio__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin: 0 auto;
-    max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-rows: 100px;         /* altura base */
+  grid-auto-flow: dense;
+  gap: 1.25rem;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
+/* ====== CARD BASE ====== */
 .portfolio__item {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 2px solid transparent;
-    transition: all 0.3s ease-in-out;
-    position: relative;
-    margin-top: 0.5rem;
+  position: relative;
+  display: block;
+  cursor: pointer;
+
+  background: #fff;
+  padding: 0;                    /* imagem ocupa 100% */
+  border-radius: 1.25rem;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+
+  /* tamanho padrão (caso algum nth-child não pegue) */
+  grid-column: span 4;
+  grid-row: span 2;
+  overflow: hidden;
 }
 
 .portfolio__item:hover {
-    border-color: #c8a2c8;
-    transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 
-.portfolio__item-image {
-    border-radius: 1rem;
-    overflow: hidden;
-    margin-bottom: 1rem;
+/* link que ocupa todo o card */
+.portfolio__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  overflow: hidden;
+  text-decoration: none;
 }
 
-.portfolio__item-image img {
-    width: 100%;
-    display: block;
+/* imagem ocupa 100% do card */
+.portfolio__link img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform .35s ease;
 }
 
-.portfolio__item h3 {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #663399;
-    margin-bottom: 0.5rem;
+.portfolio__item:hover .portfolio__link img {
+  transform: scale(1.03);
 }
 
-
-.portfolio__item p {
-    text-align: center;
-    font-size: 1rem;
-    color: #444;
-    line-height: 1.5;
-    margin: 1rem 0;
+/* ====== MAPEAMENTO DE TAMANHOS (como você pediu) ====== */
+/* gooday = 6x4 */
+.portfolio__container > .portfolio__item:nth-child(1) {
+  grid-column: span 6;
+  grid-row: span 4;
 }
 
-.portfolio__item-cta {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+/* woohoo = 4x4 */
+.portfolio__container > .portfolio__item:nth-child(2) {
+  grid-column: span 4;
+  grid-row: span 4;
 }
 
-.portfolio__item-cta button {
-    background: #c8a2c8;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
+/* fuurever = mesmo do woohoo (4x4) */
+.portfolio__container > .portfolio__item:nth-child(3) {
+  grid-column: span 4;
+  grid-row: span 4;
 }
 
-.portfolio__item-cta button:hover {
-    background: #a67bbf; 
+/* agra = mesmo do woohoo (4x4) */
+.portfolio__container > .portfolio__item:nth-child(5) {
+  grid-column: span 6;
+  grid-row: span 4;
 }
 
-/* MEDIA QUERIES PARA DISPOSITIVOS MENORES */
-@media screen and (max-width: 768px) {
-    .portfolio__container {
-        grid-template-columns: 1fr;
-    }
+/* tech = mesmo do gooday (6x4) */
+.portfolio__container > .portfolio__item:nth-child(4) {
+  grid-column: span 6;
+  grid-row: span 4;
+}
+
+/* socials = mesmo do gooday (6x4) */
+.portfolio__container > .portfolio__item:nth-child(6) {
+  grid-column: span 4;
+  grid-row: span 4;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 1200px) {
+  .portfolio__container {
+    grid-template-columns: repeat(10, minmax(0,1fr));
+    grid-auto-rows: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: repeat(8, minmax(0,1fr));
+    grid-auto-rows: 110px;
+  }
+
+  /* em tablet, simplifica um pouco mas mantém proporções */
+  .portfolio__container > .portfolio__item:nth-child(1),
+  .portfolio__container > .portfolio__item:nth-child(5),
+  .portfolio__container > .portfolio__item:nth-child(6) {
+    grid-column: span 8;
+    grid-row: span 3;
+  }
+
+  .portfolio__container > .portfolio__item:nth-child(2),
+  .portfolio__container > .portfolio__item:nth-child(3),
+  .portfolio__container > .portfolio__item:nth-child(4) {
+    grid-column: span 4;
+    grid-row: span 3;
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio__container {
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    grid-auto-rows: 95px;
+  }
+
+  /* no mobile, todos ocupam largura cheia e ficam mais altos */
+  .portfolio__container > .portfolio__item {
+    grid-column: span 4;
+    grid-row: span 3;
+  }
 }

@@ -33,7 +33,7 @@ header {
 
 .header__socials {
     position: absolute;
-    right: 37rem;
+    left: 2rem; /* joga para a esquerda */
     bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -48,8 +48,9 @@ header {
     background: var(--color-primary);
 }
 
+
 /* PICTURE */
-.me {
+/*.me {
     background: linear-gradient(var(--color-primary), transparent);
     width: 30rem;
     height: 20rem;
@@ -59,13 +60,21 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
+}*/
+
+.me {
+  display: flex;
+  justify-content: center; /* centraliza na horizontal */
+  align-items: center;     /* centraliza na vertical */
 }
 
 .me img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 70%;
+  height: auto; /* deixa a proporção correta */
+  object-fit: cover;
+  display: block; /* remove espaços indesejados */
 }
+
 
 .scroll__down {
     position: absolute;

@@ -41,8 +41,8 @@ const Contact = () => {
                     <article className='contact__option'>
                         <BsPhone className='contact__option-icon' />
                         <h4>Phone</h4>
-                        <h5>+351 912592474</h5>
-                        <a href="https://wa.me/+351912592474" target='_blank' rel='noreferrer'>Send a message</a>
+                        <h5>+55 21 964610912</h5>
+                        <a href="https://wa.me/+5521964610912" target='_blank' rel='noreferrer'>Send a message</a>
                     </article>
                 </div>
                 {/*  END OF CONTACT */}
