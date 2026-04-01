@@ -38,12 +38,17 @@ const About = () => {
                         </article>
                     </div>
 
-                    <p>
-                        I’m a versatile professional with 10 years of experience in <b>marketing and graphic design</b>. 
-                        Over the last 3 years, I've been refining my skills in web design, completing a <b>web development</b> bootcamp that taught me coding skills needed to build websites and apps. 
-                        I also earned my Master’s Degree in New Media and Web Practices, and now I´m capable of designing and programming a digital product. 
-                        I built this portfolio website myself. <br/> My background in marketing has given me a strong foundation in user research, allowing me to better understand and address user needs.
-                    </p>
+                   <p>
+  I’m a versatile graphic designer with over 13 years of experience in the digital space, working as a marketing specialist. I create visually compelling designs that are not only aesthetically strong, but also strategically driven to support conversion and business goals.
+</p>
+
+<p>
+  I hold a degree in Communication and a Master’s in New Media and Web Practices, along with additional training in UX/UI Design and Web Development. This allows me to design and build digital platforms, from websites to applications, with a holistic and practical approach.
+</p>
+
+<p>
+  My professional journey is diverse, spanning television, advertising and marketing agencies, startups, and freelance projects with my own clients. These experiences have shaped me into a dynamic and adaptable professional, comfortable navigating different contexts and challenges.
+</p>
                     {/* <a href="#contact" className='btn btn-primary'>Let's Talk</a> */}
                 </div>
             </div>

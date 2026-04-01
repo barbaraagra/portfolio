@@ -1,5 +1,8 @@
 #about {
     margin-top: 1rem;
+    background-color: #5C0D41;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .about__container {
@@ -12,13 +15,18 @@
 
 .about__me {
     width: 100%; /* Garante que ocupe 100% do espaço disponível na coluna */
-    max-width: 350px; /* Limita o tamanho máximo da foto */
+    max-width: 500px;/* Limita o tamanho máximo da foto */
     margin: 0 auto; /* Centraliza em telas menores */
     aspect-ratio: 1/1; /* Mantém a proporção quadrada */
     border-radius: 2rem;
     background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
     display: grid;
     place-items: center;
+    font-color: white;
+}
+
+#about > h2 {
+    color: #ffffff;
 }
 
 .about__me-image {
@@ -68,8 +76,8 @@
 }
 
 .about__content p {
-    margin: 2rem 1rem 2.6rem 0;
-    color: var(--color-dark);
+    margin: 3rem 2rem 2.6rem 0;
+    color: #ffffff;
     text-align: center;
 }
 

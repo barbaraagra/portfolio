@@ -1,137 +1,113 @@
-/* ====== CONTAINER EM BENTO GRID ====== */
+/* ====== CONTAINER ====== */
 .portfolio__container {
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-auto-rows: 100px;         /* altura base */
-  grid-auto-flow: dense;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin: 0 auto;
   max-width: 1400px;
 }
 
-/* ====== CARD BASE ====== */
+/* ====== CARD ====== */
 .portfolio__item {
-  position: relative;
-  display: block;
-  cursor: pointer;
-
   background: #fff;
-  padding: 0;                    /* imagem ocupa 100% */
   border-radius: 1.25rem;
-  border: 2px solid transparent;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
-  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
-
-  /* tamanho padrão (caso algum nth-child não pegue) */
-  grid-column: span 4;
-  grid-row: span 2;
   overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .portfolio__item:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
-/* link que ocupa todo o card */
+/* ====== LINK ====== */
 .portfolio__link {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: inherit;
-  overflow: hidden;
   text-decoration: none;
+  color: inherit;
 }
 
-/* imagem ocupa 100% do card */
+/* ====== IMAGEM ====== */
 .portfolio__link img {
   width: 100%;
-  height: 100%;
-  display: block;
+  height: 320px;
   object-fit: cover;
-  transition: transform .35s ease;
+  display: block;
+  transition: transform 0.35s ease;
 }
 
-.portfolio__item:hover .portfolio__link img {
+.portfolio__item:hover img {
   transform: scale(1.03);
 }
 
-/* ====== MAPEAMENTO DE TAMANHOS (como você pediu) ====== */
-/* gooday = 6x4 */
-.portfolio__container > .portfolio__item:nth-child(1) {
-  grid-column: span 6;
-  grid-row: span 4;
+/* ====== INFO DO CARD ====== */
+.portfolio__info {
+  padding: 1rem;
 }
 
-/* woohoo = 4x4 */
-.portfolio__container > .portfolio__item:nth-child(2) {
-  grid-column: span 4;
-  grid-row: span 4;
+.portfolio__category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-bg-variant);
+  margin-bottom: 0.3rem;
 }
 
-/* fuurever = mesmo do woohoo (4x4) */
-.portfolio__container > .portfolio__item:nth-child(3) {
-  grid-column: span 4;
-  grid-row: span 4;
+.portfolio__info h3 {
+  font-size: 0.95rem;
+  color: var(--color-dark);
 }
 
-/* agra = mesmo do woohoo (4x4) */
-.portfolio__container > .portfolio__item:nth-child(5) {
-  grid-column: span 6;
-  grid-row: span 4;
+/* ====== FILTROS ====== */
+.portfolio__filters {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
-/* tech = mesmo do gooday (6x4) */
-.portfolio__container > .portfolio__item:nth-child(4) {
-  grid-column: span 6;
-  grid-row: span 4;
+.portfolio__filters button {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: 1px solid var(--color-bg-variant);
+  background: transparent;
+  color: var(--color-bg-variant);
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: inherit;
 }
 
-/* socials = mesmo do gooday (6x4) */
-.portfolio__container > .portfolio__item:nth-child(6) {
-  grid-column: span 4;
-  grid-row: span 4;
+.portfolio__filters button.active,
+.portfolio__filters button:hover {
+  background: var(--color-bg-variant);
+  color: var(--color-light);
 }
 
 /* ====== RESPONSIVIDADE ====== */
-@media (max-width: 1200px) {
-  .portfolio__container {
-    grid-template-columns: repeat(10, minmax(0,1fr));
-    grid-auto-rows: 100px;
-  }
-}
 
+/* Tablet (iPad) → 1 por linha */
 @media (max-width: 1024px) {
   .portfolio__container {
-    grid-template-columns: repeat(8, minmax(0,1fr));
-    grid-auto-rows: 110px;
+    grid-template-columns: 1fr;
   }
 
-  /* em tablet, simplifica um pouco mas mantém proporções */
-  .portfolio__container > .portfolio__item:nth-child(1),
-  .portfolio__container > .portfolio__item:nth-child(5),
-  .portfolio__container > .portfolio__item:nth-child(6) {
-    grid-column: span 8;
-    grid-row: span 3;
-  }
-
-  .portfolio__container > .portfolio__item:nth-child(2),
-  .portfolio__container > .portfolio__item:nth-child(3),
-  .portfolio__container > .portfolio__item:nth-child(4) {
-    grid-column: span 4;
-    grid-row: span 3;
+  .portfolio__link img {
+    height: 360px;
   }
 }
 
-@media (max-width: 900px) {
+/* Mobile → 1 por linha */
+@media (max-width: 600px) {
   .portfolio__container {
-    grid-template-columns: repeat(4, minmax(0,1fr));
-    grid-auto-rows: 95px;
+    grid-template-columns: 1fr;
   }
 
-  /* no mobile, todos ocupam largura cheia e ficam mais altos */
-  .portfolio__container > .portfolio__item {
-    grid-column: span 4;
-    grid-row: span 3;
+  .portfolio__link img {
+    height: 260px;
   }
 }
