@@ -7,9 +7,9 @@ import { SiBehance } from 'react-icons/si';
 const HeaderSocials = () => {
     return (
         <div className='header__socials'>
-            <a href="https://www.linkedin.com/in/barbaraagra/" target='_blank'><BsLinkedin /></a>
-            <a href="https://github.com/barbaraagra" target='_blank'><BsGithub /></a>
-            <a href="https://www.behance.net/barbaraagraa" target='_blank'><SiBehance /></a>
+            <a href="https://www.linkedin.com/in/barbaraagra/" target="_blank" rel="noreferrer"><BsLinkedin /></a>
+            <a href="https://github.com/barbaraagra" target="_blank" rel="noreferrer"><BsGithub /></a>
+            <a href="https://www.behance.net/barbaraagraa" target="_blank" rel="noreferrer"><SiBehance /></a>
         </div>
     )
 }
