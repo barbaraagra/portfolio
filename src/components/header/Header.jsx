@@ -5,24 +5,24 @@ import ME from '../../assets/bruxinha.png';
 import HeaderSocials from './HeaderSocials';
 
 const Header = () => {
-    return (
-        <header>
-            <div className="header__container">
-                <h5>Hello I'm</h5>
-<h1>Bárbara Agra</h1>
-<h5 className="text-light">UX UI Designer | Graphic Designer</h5>
+  return (
+    <header id="header">
+      <div className="header__container">
+        <h5>Hello I'm</h5>
+        <h1>Bárbara Agra</h1>
+        <h5 className="text-light">UX UI Designer | Graphic Designer</h5>
 
-{ <CTA /> }
-<HeaderSocials />
+        <CTA />
+        <HeaderSocials />
 
-                <div className="me">
-                    <img src={ME} alt="me" />
-                </div>
+        <div className="me">
+          <img src={ME} alt="me" />
+        </div>
 
-                <a href="#contact" className='scroll__down'>Scroll Down</a>
-            </div>
-        </header>
-    )
-}
+        <a href="#contact" className="scroll__down">Scroll Down</a>
+      </div>
+    </header>
+  );
+};
 
 export default Header;

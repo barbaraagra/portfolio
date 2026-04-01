@@ -1,17 +1,34 @@
 import React from 'react';
-import { BsLinkedin } from 'react-icons/bs';
-import { BsGithub } from 'react-icons/bs';
-import { SiBehance } from 'react-icons/si';
-
+import { BsLinkedin, BsGithub, BsBehance } from 'react-icons/bs';
 
 const HeaderSocials = () => {
-    return (
-        <div className='header__socials'>
-            <a href="https://www.linkedin.com/in/barbaraagra/" target="_blank" rel="noreferrer"><BsLinkedin /></a>
-            <a href="https://github.com/barbaraagra" target="_blank" rel="noreferrer"><BsGithub /></a>
-            <a href="https://www.behance.net/barbaraagraa" target="_blank" rel="noreferrer"><SiBehance /></a>
-        </div>
-    )
-}
+  return (
+    <div className="header__socials">
+      <a
+        href="https://www.linkedin.com/in/barbaraagra/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <BsLinkedin />
+      </a>
 
-export default HeaderSocials
+      <a
+        href="https://github.com/barbaraagra"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <BsGithub />
+      </a>
+
+      <a
+        href="https://www.behance.net/barbaraagraa"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <BsBehance />
+      </a>
+    </div>
+  );
+};
+
+export default HeaderSocials;
