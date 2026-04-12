@@ -15,10 +15,10 @@ const ProjectVideoGallery = ({ videos = [] }) => {
 
     const selectedVideo = videoRefs.current[index];
 
-    if (selectedVideo) {
-      selectedVideo.play();
-      setPlayingIndex(index);
-    }
+    if (!selectedVideo) return;
+
+    selectedVideo.play();
+    setPlayingIndex(index);
   };
 
   const handlePause = (index) => {
@@ -42,7 +42,9 @@ const ProjectVideoGallery = ({ videos = [] }) => {
             <div className="project-video-gallery__item" key={index}>
               <div className="project-video-gallery__video-wrapper">
                 <video
-                  ref={(el) => (videoRefs.current[index] = el)}
+                  ref={(el) => {
+                    if (el) videoRefs.current[index] = el;
+                  }}
                   className="project-video-gallery__video"
                   controls={playingIndex === index}
                   preload="metadata"
@@ -57,6 +59,7 @@ const ProjectVideoGallery = ({ videos = [] }) => {
                     className="project-video-gallery__play"
                     onClick={() => handlePlay(index)}
                     aria-label={`Play video ${index + 1}`}
+                    type="button"
                   >
                     <span className="project-video-gallery__play-icon">▶</span>
                   </button>

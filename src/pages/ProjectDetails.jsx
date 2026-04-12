@@ -24,7 +24,7 @@ const ProjectDetails = () => {
   return (
     <section className="project-details">
       <div className="container">
-        <Link to="/" className="btn">
+        <Link to="/#portfolio" className="btn">
           Back to Home
         </Link>
 
@@ -64,7 +64,7 @@ const ProjectDetails = () => {
           </div>
         </div>
       </div>
-      {project.videos && project.videos.length > 0 && (
+     {project?.videos?.length > 0 && (
   <ProjectVideoGallery videos={project.videos} />
 )}
     </section>
