@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { projects } from '../data/projects';
 import './project-details.css';
+import ProjectVideoGallery from "../components/portfolio/ProjectVideoGallery";
 
 const ProjectDetails = () => {
   const { slug } = useParams();
@@ -63,7 +64,11 @@ const ProjectDetails = () => {
           </div>
         </div>
       </div>
+      {project.videos && project.videos.length > 0 && (
+  <ProjectVideoGallery videos={project.videos} />
+)}
     </section>
+    
   );
 };
 
