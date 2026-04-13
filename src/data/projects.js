@@ -1,6 +1,6 @@
 import img1 from '../assets/card-gooday.png';
 import img2 from '../assets/card-woohoo.png';
-import img3 from '../assets/fuurever_home.png';
+import img3 from '../assets/card-fuurever.png';
 import img4 from '../assets/card-phd1.png';
 import img5 from '../assets/card-xquic.png';
 import img6 from '../assets/card-mateshine.png';
@@ -8,6 +8,18 @@ import img7 from '../assets/card-agra.png';
 import img8 from '../assets/card-livia.png';
 import img9 from '../assets/card-socials.png';
 import img10 from '../assets/card-torii.png';
+import img11 from '../assets/card-moonmagic.png';
+import img12 from '../assets/card-realhome.png';
+import img13 from '../assets/card-dino.png';
+import portwoohoo from "../assets/interiorprojeto/MockupWoohoo.jpg"
+import goodaydetail from "../assets/interiorprojeto/gooday-detail.png"
+import fuureverdetail from "../assets/interiorprojeto/fuurever-details.png"
+import mateshine1 from "../assets/videos/MateShine1.mp4"
+import mateshine2 from "../assets/videos/MateShine2.mp4"
+import mateshine3 from "../assets/videos/MateShine3.mp4"
+
+
+
 
 export const projects = [
   {
@@ -24,6 +36,7 @@ export const projects = [
     tools: 'Figma, Adobe Suite',
     year: '2025',
     link: 'https://www.behance.net/gallery/213351813/Gooday',
+    longImage: goodaydetail,
   },
   {
     id: 2,
@@ -39,6 +52,7 @@ export const projects = [
     tools: 'Adobe Suite',
     year: '2019',
     link: 'https://www.behance.net/gallery/114807509/Canal-Woohoo',
+    longImage: portwoohoo,
   },
   {
     id: 3,
@@ -54,6 +68,7 @@ export const projects = [
     tools: 'Figma, Illustrator',
     year: '2025',
     link: 'https://www.behance.net/gallery/209850913/Fuurever-Home',
+    longImage: fuureverdetail,
   },
   {
     id: 4,
@@ -99,6 +114,11 @@ export const projects = [
     tools: 'Adobe Suite',
     year: '2025',
     link: 'https://www.behance.net/gallery/138978125/Social-Media-Portfolio',
+      videos: [
+    mateshine1,
+    mateshine2,
+    mateshine3
+  ]
   },
   {
     id: 7,
@@ -117,21 +137,6 @@ export const projects = [
   },
   {
     id: 8,
-    slug: 'livia-ornellas',
-    category: 'social media',
-    image: img8,
-    title: 'Livia Ornellas',
-    subtitle: 'Social media design for technology-focused brands.',
-    description:
-      'A selection of social media pieces created for technology brands, with emphasis on clarity, hierarchy, and communication designed for digital environments.',
-    client: 'Xquic and other brands',
-    role: 'Graphic Design / Social Media / Video Editing',
-    tools: 'Premiere, Figma',
-    year: '2024',
-    link: 'https://www.behance.net/gallery/223750177/Xquic-Social-Media',
-  },
-  {
-    id: 9,
     slug: 'torii',
     category: 'graphic design | branding',
     image: img10,
@@ -145,13 +150,29 @@ export const projects = [
     year: '2022–2024',
     link: 'https://www.behance.net/gallery/138978125/Social-Media-Portfolio',
   },
+  {
+    id: 9,
+    slug: 'livia-ornellas',
+    category: 'social media',
+    image: img8,
+    title: 'Livia Ornellas',
+    subtitle: 'Social media design for technology-focused brands.',
+    description:
+      'A selection of social media pieces created for technology brands, with emphasis on clarity, hierarchy, and communication designed for digital environments.',
+    client: 'Xquic and other brands',
+    role: 'Graphic Design / Social Media / Video Editing',
+    tools: 'Premiere, Figma',
+    year: '2024',
+    link: 'https://www.behance.net/gallery/223750177/Xquic-Social-Media',
+  },
+  
 
   {
     id: 10,
-    slug: 'gooday-2',
+    slug: 'realhome',
     category: 'ux ui design',
-    image: img1,
-    title: 'Gooday Mobile App',
+    image: img12,
+    title: 'Moon Magic',
     subtitle: 'Mobile app design focused on experience, usability, and visual consistency.',
     description:
       'Placeholder project card based on Gooday. This can be replaced later with a new case study, images, and project details.',
@@ -163,10 +184,10 @@ export const projects = [
   },
   {
     id: 11,
-    slug: 'woohoo-2',
-    category: 'marketing',
-    image: img2,
-    title: 'Woohoo Campaigns',
+    slug: 'moonmagic',
+    category: 'ux ui design',
+    image: img11,
+    title: 'Moon Magic',
     subtitle: 'Communication and digital design for a television channel.',
     description:
       'Placeholder project card based on Woohoo. This can be replaced later with a new case study, updated text, and refined visual direction.',
@@ -178,10 +199,10 @@ export const projects = [
   },
   {
     id: 12,
-    slug: 'fuurever-2',
+    slug: 'dinoera',
     category: 'ux ui design',
-    image: img3,
-    title: 'Fuurever App',
+    image: img13,
+    title: 'Dino Era',
     subtitle: 'A digital product concept with user-centered design.',
     description:
       'Placeholder project card based on Fuurever Home. You can later swap this for another UX/UI project with its own structure and media.',
@@ -190,13 +211,13 @@ export const projects = [
     tools: 'Figma, Illustrator',
     year: '2024',
     link: 'https://www.behance.net/gallery/209850913/Fuurever-Home',
-  },
+  }, /*
   {
     id: 13,
-    slug: 'phd-2',
+    slug: 'dinoera',
     category: 'web development',
-    image: img4,
-    title: 'Architecture Website',
+    image: img13,
+    title: 'Dino Era',
     subtitle: 'A website project combining branding, design, and digital presence.',
     description:
       'Placeholder card for another web project. Keep it for now as a visual filler and replace the content when you are ready.',
@@ -280,5 +301,5 @@ export const projects = [
     tools: 'Adobe Suite',
     year: '2022–2024',
     link: 'https://www.behance.net/gallery/138978125/Social-Media-Portfolio',
-  },
+  },*/
 ];

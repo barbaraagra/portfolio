@@ -17,6 +17,7 @@ const ProjectDetails = () => {
             Back to Home
           </Link>
         </div>
+        
       </section>
     );
   }
@@ -24,9 +25,9 @@ const ProjectDetails = () => {
   return (
     <section className="project-details">
       <div className="container">
-        <Link to="/#portfolio" className="btn">
-          Back to Home
-        </Link>
+<Link to="/#portfolio" className="btn">
+  Back to Home
+</Link>
 
         <div className="project-details__hero">
           <div className="project-details__image">
@@ -64,11 +65,14 @@ const ProjectDetails = () => {
           </div>
         </div>
       </div>
-     {project?.videos?.length > 0 && (
-  <ProjectVideoGallery videos={project.videos} />
-)}
+
+      <div className="project-details__full-image">
+  <img src={project.longImage} alt={project.title} />
+</div>
+      {project?.videos?.length > 0 && (
+        <ProjectVideoGallery videos={project.videos} />
+      )}
     </section>
-    
   );
 };
 
