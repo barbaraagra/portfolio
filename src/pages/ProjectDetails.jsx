@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { projects } from '../data/projects';
 import './project-details.css';
-import ProjectVideoGallery from "../components/portfolio/ProjectVideoGallery";
+import ProjectVideoGallery from '../components/portfolio/ProjectVideoGallery';
 
 const ProjectDetails = () => {
   const { slug } = useParams();
@@ -13,11 +13,10 @@ const ProjectDetails = () => {
       <section className="project-details">
         <div className="container">
           <h1>Project not found</h1>
-          <Link to="/" className="btn">
+          <Link to="/#portfolio" className="btn">
             Back to Home
           </Link>
         </div>
-        
       </section>
     );
   }
@@ -25,9 +24,9 @@ const ProjectDetails = () => {
   return (
     <section className="project-details">
       <div className="container">
-<Link to="/#portfolio" className="btn">
-  Back to Home
-</Link>
+        <Link to="/#portfolio" className="btn">
+          Back to Home
+        </Link>
 
         <div className="project-details__hero">
           <div className="project-details__image">
@@ -61,17 +60,32 @@ const ProjectDetails = () => {
                 <p>{project.year}</p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
 
-      <div className="project-details__full-image">
-  <img src={project.longImage} alt={project.title} />
-</div>
+      {project?.longImage && (
+        <div className="project-details__full-image">
+          <img src={project.longImage} alt={project.title} />
+        </div>
+      )}
+
       {project?.videos?.length > 0 && (
         <ProjectVideoGallery videos={project.videos} />
       )}
+
+      {project.heroVideo && (
+  <div className="project-details__hero-video">
+    <video
+      src={project.heroVideo}
+      controls
+      autoPlay
+      muted
+      loop
+      playsInline
+    />
+  </div>
+)}
     </section>
   );
 };

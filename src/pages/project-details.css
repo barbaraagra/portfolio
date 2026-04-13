@@ -63,6 +63,21 @@
   height: auto;
   display: block;
 }
+.project-details__hero-video {
+  width: 100%;
+  max-width: 1200px;
+  margin: 4rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+}
+
+.project-details__hero-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
 
 @media (max-width: 1024px) {
   .project-details__hero {

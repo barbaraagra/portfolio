@@ -34,7 +34,7 @@ const ProjectVideoGallery = ({ videos = [] }) => {
       <div className="container">
         <div className="project-video-gallery__header">
           <p className="project-video-gallery__eyebrow">Video Showcase</p>
-          <h2>Selected Videos</h2>
+          <h2>Instagram Reels</h2>
         </div>
 
         <div className="project-video-gallery__grid">

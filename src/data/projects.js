@@ -14,9 +14,11 @@ import img13 from '../assets/card-dino.png';
 import portwoohoo from "../assets/interiorprojeto/MockupWoohoo.jpg"
 import goodaydetail from "../assets/interiorprojeto/gooday-detail.png"
 import fuureverdetail from "../assets/interiorprojeto/fuurever-details.png"
+import realhomedetail from "../assets/interiorprojeto/realhome-details.png"
 import mateshine1 from "../assets/videos/MateShine1.mp4"
 import mateshine2 from "../assets/videos/MateShine2.mp4"
 import mateshine3 from "../assets/videos/MateShine3.mp4"
+import dinoeragame from "../assets/videos/dinoeragame.mp4"
 
 
 
@@ -49,7 +51,7 @@ export const projects = [
       'This project brings together creative, marketing, and digital communication work developed for Woohoo Channel. It includes visual strategy, branded content, and digital assets designed to connect with a young and engaged audience.',
     client: 'Woohoo Channel',
     role: 'Graphic Design / Marketing',
-    tools: 'Adobe Suite',
+    tools: 'Adobe Suite, Meta Business Suite',
     year: '2019',
     link: 'https://www.behance.net/gallery/114807509/Canal-Woohoo',
     longImage: portwoohoo,
@@ -76,14 +78,13 @@ export const projects = [
     category: 'web development',
     image: img4,
     title: 'PHD Architects',
-    subtitle: 'A website project combining branding, design, and digital presence.',
+    subtitle: 'A clean, modern website project combining UX/UI design and WordPress development for an architecture studio based in California.',
     description:
-      'Website project focused on translating the studio identity into a clean, professional, and strategic digital presence, with attention to structure, branding, and user experience.',
+      'For PHD Architects, I designed and developed a responsive website focused on clean aesthetics, clear navigation, and a refined user experience. The project included UX/UI design in Figma and full implementation in WordPress using Divi, translating the studio’s visual identity into a functional and professional online presence.',
     client: 'PHD Architects',
     role: 'Web Design / Web Development',
     tools: 'WordPress, HTML, CSS, Figma',
     year: '2025',
-    link: '',
   },
   {
     id: 5,
@@ -109,9 +110,9 @@ export const projects = [
     subtitle: 'A curated selection of social and visual communication pieces.',
     description:
       'A portfolio selection of social media and visual communication projects developed for different brands and contexts, highlighting consistency, adaptability, and strong visual direction.',
-    client: 'Multiple clients',
-    role: 'Graphic Design',
-    tools: 'Adobe Suite',
+    client: 'Mate Shine - Beverage Products',
+    role: 'Motion Designer',
+    tools: 'Canva',
     year: '2025',
     link: 'https://www.behance.net/gallery/138978125/Social-Media-Portfolio',
       videos: [
@@ -144,7 +145,7 @@ export const projects = [
     subtitle: 'A curated selection of social and visual communication pieces.',
     description:
       'A portfolio selection of social media projects developed for different brands and contexts. The work highlights visual communication, consistency, and adaptability across formats, campaigns, and audiences.',
-    client: 'Multiple clients',
+    client: 'Torii Restaurant',
     role: 'Graphic Design',
     tools: 'Adobe Suite',
     year: '2022–2024',
@@ -159,7 +160,7 @@ export const projects = [
     subtitle: 'Social media design for technology-focused brands.',
     description:
       'A selection of social media pieces created for technology brands, with emphasis on clarity, hierarchy, and communication designed for digital environments.',
-    client: 'Xquic and other brands',
+    client: 'Livia Ornellas - Interior Designer',
     role: 'Graphic Design / Social Media / Video Editing',
     tools: 'Premiere, Figma',
     year: '2024',
@@ -170,9 +171,9 @@ export const projects = [
   {
     id: 10,
     slug: 'realhome',
-    category: 'ux ui design',
+    category: 'ux ui design | social media',
     image: img12,
-    title: 'Moon Magic',
+    title: 'Real Home',
     subtitle: 'Mobile app design focused on experience, usability, and visual consistency.',
     description:
       'Placeholder project card based on Gooday. This can be replaced later with a new case study, images, and project details.',
@@ -181,6 +182,7 @@ export const projects = [
     tools: 'Figma, Adobe Suite',
     year: '2024',
     link: 'https://www.behance.net/gallery/213351813/Gooday',
+    longImage: realhomedetail,
   },
   {
     id: 11,
@@ -200,17 +202,18 @@ export const projects = [
   {
     id: 12,
     slug: 'dinoera',
-    category: 'ux ui design',
+    category: 'web development',
     image: img13,
     title: 'Dino Era',
-    subtitle: 'A digital product concept with user-centered design.',
+    subtitle: 'An arcade-style web game built with HTML, CSS, and JavaScript.',
     description:
-      'Placeholder project card based on Fuurever Home. You can later swap this for another UX/UI project with its own structure and media.',
+      'Dino Era is a web-based arcade game built with HTML, CSS, and JavaScript. Players choose one of three dinosaurs and must survive a one-minute asteroid storm. If hit three times, the game ends. The project focuses on gameplay logic, collision detection, and interactive design.',
     client: 'Concept Project',
-    role: 'UX/UI Design',
-    tools: 'Figma, Illustrator',
-    year: '2024',
+    role: 'Game Developer',
+    tools: 'HTML, CSS, Javascript',
+    year: '2023',
     link: 'https://www.behance.net/gallery/209850913/Fuurever-Home',
+    heroVideo: dinoeragame,
   }, /*
   {
     id: 13,
