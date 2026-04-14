@@ -19,6 +19,11 @@ import mateshine1 from "../assets/videos/MateShine1.mp4"
 import mateshine2 from "../assets/videos/MateShine2.mp4"
 import mateshine3 from "../assets/videos/MateShine3.mp4"
 import dinoeragame from "../assets/videos/dinoeragame.mp4"
+import xquicdetail from "../assets/xquic-details.png"
+import agradetail from "../assets/agra-details.png"
+import moondetail from "../assets/moonmagic-details.png"
+import toriidetail from "../assets/torii-details.png"
+
 
 
 
@@ -36,7 +41,7 @@ export const projects = [
     client: 'Concept Project',
     role: 'UX/UI Design',
     tools: 'Figma, Adobe Suite',
-    year: '2025',
+    year: '2024',
     link: 'https://www.behance.net/gallery/213351813/Gooday',
     longImage: goodaydetail,
   },
@@ -47,8 +52,17 @@ export const projects = [
     image: img2,
     title: 'Woohoo Channel',
     subtitle: 'Communication and digital design for a television channel.',
-    description:
-      'This project brings together creative, marketing, and digital communication work developed for Woohoo Channel. It includes visual strategy, branded content, and digital assets designed to connect with a young and engaged audience.',
+       description: (
+  <>
+    This project brings together creative, marketing, and digital communication work developed for Woohoo Channel. It includes visual strategy, branded content, and digital assets designed to connect with a young and engaged audience.,
+    <br />
+    <a href="https://www.instagram.com/canalwoohoo/" target="_blank">Instagram</a>
+    <br />
+    <a href="https://www.facebook.com/woohootv/" target="_blank">Facebook</a>
+    <br />
+    <a href="https://woohoo.com.br/" target="_blank">Website</a>
+  </>
+),
     client: 'Woohoo Channel',
     role: 'Graphic Design / Marketing',
     tools: 'Adobe Suite, Meta Business Suite',
@@ -84,7 +98,7 @@ export const projects = [
     client: 'PHD Architects',
     role: 'Web Design / Web Development',
     tools: 'WordPress, HTML, CSS, Figma',
-    year: '2025',
+    year: '2026',
   },
   {
     id: 5,
@@ -92,14 +106,22 @@ export const projects = [
     category: 'social media | graphic design',
     image: img5,
     title: 'Xquic',
-    subtitle: 'Social media design for technology-focused brands.',
-    description:
-      'This project presents a collection of social media pieces created for tech companies, with a focus on clarity, strong visual hierarchy, and communication tailored to digital platforms and brand tone.',
-    client: 'Xquic and other brands',
-    role: 'Graphic Design / Social Media',
+    subtitle: 'Multi-channel design and brand support across digital and physical touchpoints.',
+       description: (
+  <>
+    As a designer for XQUIC, I worked across a variety of projects, including presentation design, event backdrops, social media content, and advertising campaigns. My role focused on translating the brand’s identity into consistent, high-impact visuals across different formats, supporting both marketing initiatives and live experiences.
+    <br />
+    <a href="https://www.linkedin.com/company/x-quic/" target="_blank">Linkedin</a>
+    <br />
+    <a href="https://xquic.com/" target="_blank">Website</a>
+  </>
+),
+    client: 'Xquic',
+    role: 'Graphic Design / Marketing',
     tools: 'Photoshop, Illustrator, Canva',
     year: '2025',
     link: 'https://www.behance.net/gallery/223750177/Xquic-Social-Media',
+    longImage: xquicdetail,
   },
   {
     id: 6,
@@ -107,9 +129,9 @@ export const projects = [
     category: 'motion',
     image: img6,
     title: 'Mate Shine',
-    subtitle: 'A curated selection of social and visual communication pieces.',
+    subtitle: 'Motion design and social content for a Brazilian beverage brand.',
     description:
-      'A portfolio selection of social media and visual communication projects developed for different brands and contexts, highlighting consistency, adaptability, and strong visual direction.',
+      'I created three animated Instagram Reels for Mate Shine, a Brazilian beverage brand, focusing on dynamic visuals that highlight the product’s energy and identity. The goal was to capture attention quickly, reinforce brand presence, and create engaging, scroll-stopping content tailored for social media.',
     client: 'Mate Shine - Beverage Products',
     role: 'Motion Designer',
     tools: 'Canva',
@@ -128,13 +150,23 @@ export const projects = [
     image: img7,
     title: 'Agra Design',
     subtitle: 'A website project combining branding, design, and digital presence.',
-    description:
-      'Agra Design is a web project that combines branding, visual direction, and website execution. The project focused on creating a cohesive digital identity and translating brand values into an elegant and professional online experience.',
+       description: (
+  <>
+    Agra Design is a web project that combines branding, visual direction, and website execution. The project focused on creating a cohesive digital identity and translating brand values into an elegant and professional online experience.',
+    client: 'Agra Design',
+    role: 'Branding / Web Design / Web Development,
+    <br />
+    <a href="https://www.instagram.com/agra.design_/" target="_blank">Instagram</a>
+    <br />
+    <a href="https://agradesign.com.br/" target="_blank">Website</a>
+  </>
+),
     client: 'Agra Design',
     role: 'Branding / Web Design / Web Development',
-    tools: 'WordPress, HTML, CSS, Figma',
-    year: '2023',
+    tools: 'Adobe Suite, Figma',
+    year: '2024',
     link: 'https://agradesign.com.br/',
+    longImage: agradetail,
   },
   {
     id: 8,
@@ -147,9 +179,10 @@ export const projects = [
       'A portfolio selection of social media projects developed for different brands and contexts. The work highlights visual communication, consistency, and adaptability across formats, campaigns, and audiences.',
     client: 'Torii Restaurant',
     role: 'Graphic Design',
-    tools: 'Adobe Suite',
-    year: '2022–2024',
+    tools: 'Adobe Suite, Figma',
+    year: '2025',
     link: 'https://www.behance.net/gallery/138978125/Social-Media-Portfolio',
+    longImage: toriidetail,
   },
   {
     id: 9,
@@ -157,13 +190,20 @@ export const projects = [
     category: 'social media',
     image: img8,
     title: 'Livia Ornellas',
-    subtitle: 'Social media design for technology-focused brands.',
-    description:
-      'A selection of social media pieces created for technology brands, with emphasis on clarity, hierarchy, and communication designed for digital environments.',
-    client: 'Livia Ornellas - Interior Designer',
+    subtitle: 'Social media marketing and content production for an interior architect.',
+   description: (
+  <>
+    I led the social media marketing efforts, creating content strategies aligned with her brand and audience. I was responsible for planning and scripting posts, capturing photos and videos, editing the material, and managing the publishing process. The work focused on building a strong visual presence and engaging storytelling to showcase her projects and expertise.
+    <br />
+    <a href="https://www.instagram.com/liviaornellas.arq/" target="_blank">Instagram</a>
+    <br />
+    <a href="https://www.liviaornellasarquitetura.com/" target="_blank">Website</a>
+  </>
+),
+    client: 'Livia Ornellas - Interior Architect',
     role: 'Graphic Design / Social Media / Video Editing',
-    tools: 'Premiere, Figma',
-    year: '2024',
+    tools: 'Premiere, Figma, Canva, Meta Business',
+    year: '2025',
     link: 'https://www.behance.net/gallery/223750177/Xquic-Social-Media',
   },
   
@@ -174,12 +214,12 @@ export const projects = [
     category: 'ux ui design | social media',
     image: img12,
     title: 'Real Home',
-    subtitle: 'Mobile app design focused on experience, usability, and visual consistency.',
+    subtitle: 'End-to-end design case study across digital products and brand identity.',
     description:
-      'Placeholder project card based on Gooday. This can be replaced later with a new case study, images, and project details.',
+      'Real Home is a comprehensive design case study developed for a real estate company, where I created the visual and user experience across multiple touchpoints, including a landing page, Instagram content, branding, and a mobile app. The project focused on building a cohesive and user-centered experience, ensuring consistency between the brand identity and digital interfaces while supporting both marketing and product goals.',
     client: 'Concept Project',
     role: 'UX/UI Design',
-    tools: 'Figma, Adobe Suite',
+    tools: 'Figma',
     year: '2024',
     link: 'https://www.behance.net/gallery/213351813/Gooday',
     longImage: realhomedetail,
@@ -190,14 +230,15 @@ export const projects = [
     category: 'ux ui design',
     image: img11,
     title: 'Moon Magic',
-    subtitle: 'Communication and digital design for a television channel.',
+    subtitle: 'UX/UI case study for a cycle tracking app focused on Apple Watch',
     description:
-      'Placeholder project card based on Woohoo. This can be replaced later with a new case study, updated text, and refined visual direction.',
+      'MoonMagic is a design case study for a menstrual cycle tracking app that connects cycle phases with the lunar cycle. The project focused on creating an intuitive and lightweight experience for Apple Watch, prioritizing clarity, quick interactions, and meaningful insights. The design translates complex biological and lunar data into simple, accessible visuals that support daily awareness and personal wellbeing.',
     client: 'Woohoo Channel',
-    role: 'Graphic Design / Marketing',
-    tools: 'Adobe Suite',
-    year: '2021',
+    role: 'UX UI Designer',
+    tools: 'Figma',
+    year: '2025',
     link: 'https://www.behance.net/gallery/114807509/Canal-Woohoo',
+    longImage: moondetail,
   },
   {
     id: 12,
@@ -206,8 +247,15 @@ export const projects = [
     image: img13,
     title: 'Dino Era',
     subtitle: 'An arcade-style web game built with HTML, CSS, and JavaScript.',
-    description:
-      'Dino Era is a web-based arcade game built with HTML, CSS, and JavaScript. Players choose one of three dinosaurs and must survive a one-minute asteroid storm. If hit three times, the game ends. The project focuses on gameplay logic, collision detection, and interactive design.',
+   description: (
+  <>
+    Dino Era is a web-based arcade game built with HTML, CSS, and JavaScript. Players choose one of three dinosaurs and must survive a one-minute asteroid storm. If hit three times, the game ends. The project focuses on gameplay logic, collision detection, and interactive design.',
+    role: 'Branding / Web Design / Web Development,
+    <br />
+    <a href="https://barbaraagra.github.io/Dino_Era/" target="_blank">Play the Game</a>
+
+  </>
+),
     client: 'Concept Project',
     role: 'Game Developer',
     tools: 'HTML, CSS, Javascript',
