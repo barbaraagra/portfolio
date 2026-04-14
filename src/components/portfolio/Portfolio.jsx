@@ -19,7 +19,7 @@ const Portfolio = () => {
   const filteredProjects =
     filter === 'all'
       ? projects
-      : projects.filter((project) => project.category === filter);
+      : projects.filter((project) => project.categories.includes(filter));
 
   return (
     <section id="portfolio">
@@ -42,14 +42,13 @@ const Portfolio = () => {
       <div className="portfolio__container">
         {filteredProjects.map((project) => (
           <article key={project.id} className="portfolio__item">
-            <Link
-              to={`/project/${project.slug}`}
-              className="portfolio__link"
-            >
+            <Link to={`/project/${project.slug}`} className="portfolio__link">
               <img src={project.image} alt={project.title} />
 
               <div className="portfolio__info">
-                <p className="portfolio__category">{project.category}</p>
+                <p className="portfolio__category">
+                  {project.categories.join(' • ')}
+                </p>
                 <h3>{project.title}</h3>
               </div>
             </Link>

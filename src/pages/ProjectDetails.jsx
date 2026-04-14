@@ -21,6 +21,21 @@ const ProjectDetails = () => {
     );
   }
 
+  const {
+    title,
+    subtitle,
+    description,
+    image,
+    categories = [],
+    client,
+    role,
+    tools,
+    year,
+    longImage,
+    videos = [],
+    heroVideo,
+  } = project;
+
   return (
     <section className="project-details">
       <div className="container">
@@ -30,62 +45,83 @@ const ProjectDetails = () => {
 
         <div className="project-details__hero">
           <div className="project-details__image">
-            <img src={project.image} alt={project.title} />
+            <img src={image} alt={title} />
           </div>
 
           <div className="project-details__content">
-            <p className="project-details__category">{project.category}</p>
-            <h1>{project.title}</h1>
-            <p className="project-details__subtitle">{project.subtitle}</p>
-            <p>{project.description}</p>
+            {categories.length > 0 && (
+              <p className="project-details__category">
+                {categories.join(' • ')}
+              </p>
+            )}
+
+            <h1>{title}</h1>
+
+            {subtitle && (
+              <p className="project-details__subtitle">{subtitle}</p>
+            )}
+
+            {description && (
+              <div className="project-details__description">
+                {description}
+              </div>
+            )}
 
             <div className="project-details__meta">
-              <div>
-                <h4>Client</h4>
-                <p>{project.client}</p>
-              </div>
+              {client && (
+                <div>
+                  <h4>Client</h4>
+                  <p>{client}</p>
+                </div>
+              )}
 
-              <div>
-                <h4>Role</h4>
-                <p>{project.role}</p>
-              </div>
+              {role && (
+                <div>
+                  <h4>Role</h4>
+                  <p>{role}</p>
+                </div>
+              )}
 
-              <div>
-                <h4>Tools</h4>
-                <p>{project.tools}</p>
-              </div>
+              {tools && (
+                <div>
+                  <h4>Tools</h4>
+                  <p>{tools}</p>
+                </div>
+              )}
 
-              <div>
-                <h4>Year</h4>
-                <p>{project.year}</p>
-              </div>
+              {year && (
+                <div>
+                  <h4>Year</h4>
+                  <p>{year}</p>
+                </div>
+              )}
             </div>
           </div>
         </div>
       </div>
 
-      {project?.longImage && (
+      {longImage && (
         <div className="project-details__full-image">
-          <img src={project.longImage} alt={project.title} />
+          <img src={longImage} alt={title} />
         </div>
       )}
 
-      {project?.videos?.length > 0 && (
-        <ProjectVideoGallery videos={project.videos} />
+      {videos.length > 0 && (
+        <ProjectVideoGallery videos={videos} />
       )}
 
-      {project.heroVideo && (
-  <div className="project-details__hero-video">
-    <video
-      src={project.heroVideo}
-      controls
-      autoPlay
-      muted
-      loop
-      playsInline
-    />
-  </div>
-)}
+      {heroVideo && (
+        <div className="project-details__hero-video">
+          <video
+            src={heroVideo}
+            controls
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+        </div>
+      )}
     </section>
   );
 };

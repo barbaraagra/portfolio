@@ -1,11 +1,15 @@
-import React, { useRef, useState } from "react";
-import "./project-video-gallery.css";
+import React, { useEffect, useRef, useState } from 'react';
+import './project-video-gallery.css';
 
 const ProjectVideoGallery = ({ videos = [] }) => {
   const videoRefs = useRef([]);
   const [playingIndex, setPlayingIndex] = useState(null);
 
-  const handlePlay = (index) => {
+  useEffect(() => {
+    videoRefs.current = videoRefs.current.slice(0, videos.length);
+  }, [videos]);
+
+  const handlePlay = async (index) => {
     videoRefs.current.forEach((video, i) => {
       if (video && i !== index) {
         video.pause();
@@ -17,14 +21,16 @@ const ProjectVideoGallery = ({ videos = [] }) => {
 
     if (!selectedVideo) return;
 
-    selectedVideo.play();
-    setPlayingIndex(index);
+    try {
+      await selectedVideo.play();
+      setPlayingIndex(index);
+    } catch (error) {
+      console.error('Error playing video:', error);
+    }
   };
 
   const handlePause = (index) => {
-    if (playingIndex === index) {
-      setPlayingIndex(null);
-    }
+    setPlayingIndex((current) => (current === index ? null : current));
   };
 
   if (!videos.length) return null;
@@ -39,11 +45,11 @@ const ProjectVideoGallery = ({ videos = [] }) => {
 
         <div className="project-video-gallery__grid">
           {videos.map((videoSrc, index) => (
-            <div className="project-video-gallery__item" key={index}>
+            <div className="project-video-gallery__item" key={`${videoSrc}-${index}`}>
               <div className="project-video-gallery__video-wrapper">
                 <video
                   ref={(el) => {
-                    if (el) videoRefs.current[index] = el;
+                    videoRefs.current[index] = el || null;
                   }}
                   className="project-video-gallery__video"
                   controls={playingIndex === index}

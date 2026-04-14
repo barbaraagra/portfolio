@@ -21,6 +21,8 @@ import mateshine1 from '../assets/videos/MateShine1.mp4';
 import mateshine2 from '../assets/videos/MateShine2.mp4';
 import mateshine3 from '../assets/videos/MateShine3.mp4';
 import dinoeragame from '../assets/videos/dinoeragame.mp4';
+import phdwebsite from '../assets/videos/phd-website.mp4';
+
 
 import xquicdetail from '../assets/xquic-details.png';
 import agradetail from '../assets/agra-details.png';
@@ -31,12 +33,20 @@ export const projects = [
   {
     id: 1,
     slug: 'gooday',
-    category: 'ux ui design',
+    categories: ['ux ui design'],
     image: img1,
     title: 'Gooday',
     subtitle: 'Mobile app design focused on experience, usability, and visual consistency.',
-    description:
-      'Gooday is a mobile app project developed with a strong focus on UX/UI design, usability, and product thinking. The goal was to create a visually engaging and intuitive interface, balancing functionality with a playful and modern aesthetic.',
+    description: (
+      <>
+        Gooday is a mobile app project developed with a strong focus on UX/UI design, usability, and product thinking. The goal was to create a visually engaging and intuitive interface, balancing functionality with a playful and modern aesthetic.
+        <br />
+        <a href="https://www.figma.com/proto/S322tvnhTMc225FMek2CQf/Gooday?node-id=87-854&p=f&viewport=59%2C153%2C0.13&t=v78Vu3GU6ZVqV0Gn-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=87%3A854&page-id=0%3A1" target="_blank" rel="noreferrer">
+          Figma Prototype
+        </a>
+    
+      </>
+    ),
     client: 'Concept Project',
     role: 'UX/UI Design',
     tools: 'Figma, Adobe Suite',
@@ -47,7 +57,7 @@ export const projects = [
   {
     id: 2,
     slug: 'woohoo',
-    category: 'marketing',
+    categories: ['marketing'],
     image: img2,
     title: 'Woohoo Channel',
     subtitle: 'Communication and digital design for a television channel.',
@@ -80,12 +90,20 @@ export const projects = [
   {
     id: 3,
     slug: 'fuurever',
-    category: 'ux ui design',
+    categories: ['ux ui design'],
     image: img3,
     title: 'Fuurever Home',
     subtitle: 'A digital product concept with user-centered design.',
-    description:
-      'Fuurever Home is a digital concept project developed around the experience of finding and adopting pets. The interface was designed to feel friendly, accessible, and emotionally engaging, while maintaining clarity and ease of use.',
+        description: (
+      <>
+        Fuurever Home is a digital concept project developed around the experience of finding and adopting pets. The interface was designed to feel friendly, accessible, and emotionally engaging, while maintaining clarity and ease of use.
+        <br />
+        <a href="https://www.figma.com/proto/8AZeoKz3MEtqdKMZWzQj9W/Fuurever-Home?node-id=1-4&p=f&viewport=635%2C254%2C0.19&t=3U1WPfDY4X21qUzG-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A4&show-proto-sidebar=1&page-id=0%3A1" target="_blank" rel="noreferrer">
+          Figma Prototype
+        </a>
+    
+      </>
+    ),
     client: 'Concept Project',
     role: 'UX/UI Design',
     tools: 'Figma, Illustrator',
@@ -96,22 +114,31 @@ export const projects = [
   {
     id: 4,
     slug: 'phd',
-    category: 'web development',
+    categories: ['web development'],
     image: img4,
     title: 'PHD Architects',
     subtitle:
       'A clean, modern website project combining UX/UI design and WordPress development for an architecture studio based in California.',
-    description:
-      'For PHD Architects, I designed and developed a responsive website focused on clean aesthetics, clear navigation, and a refined user experience. The project included UX/UI design in Figma and full implementation in WordPress using Divi, translating the studio’s visual identity into a functional and professional online presence.',
+        description: (
+      <>
+        For PHD Architects, I designed and developed a responsive website focused on clean aesthetics, clear navigation, and a refined user experience. The project included UX/UI design in Figma and full implementation in WordPress using Divi, translating the studio’s visual identity into a functional and professional online presence.
+        <br />
+        <a href="https://phdarch.com/" target="_blank" rel="noreferrer">
+          Website
+        </a>
+      </>
+    ),
+
     client: 'PHD Architects',
     role: 'Web Design / Web Development',
     tools: 'WordPress, HTML, CSS, Figma',
     year: '2026',
+     heroVideo: phdwebsite,
   },
   {
     id: 5,
     slug: 'xquic',
-    category: 'social media | graphic design',
+    categories: ['social media', 'graphic design', 'marketing'],
     image: img5,
     title: 'Xquic',
     subtitle: 'Multi-channel design and brand support across digital and physical touchpoints.',
@@ -142,7 +169,7 @@ export const projects = [
   {
     id: 6,
     slug: 'mateshine',
-    category: 'motion',
+    categories: ['motion design'],
     image: img6,
     title: 'Mate Shine',
     subtitle: 'Motion design and social content for a Brazilian beverage brand.',
@@ -158,7 +185,7 @@ export const projects = [
   {
     id: 7,
     slug: 'agra',
-    category: 'web development',
+    categories: ['web development', 'branding'],
     image: img7,
     title: 'Agra Design',
     subtitle: 'A website project combining branding, design, and digital presence.',
@@ -187,7 +214,7 @@ export const projects = [
   {
     id: 8,
     slug: 'torii',
-    category: 'graphic design | branding',
+    categories: ['graphic design'],
     image: img10,
     title: 'Torii Restaurant',
     subtitle: 'A curated selection of social and visual communication pieces.',
@@ -203,7 +230,7 @@ export const projects = [
   {
     id: 9,
     slug: 'livia-ornellas',
-    category: 'social media',
+    categories: ['social media', "marketing"],
     image: img8,
     title: 'Livia Ornellas',
     subtitle: 'Social media marketing and content production for an interior architect.',
@@ -241,12 +268,20 @@ export const projects = [
   {
     id: 10,
     slug: 'realhome',
-    category: 'ux ui design | social media',
+    categories: ['graphic design', "ux ui design"],
     image: img12,
     title: 'Real Home',
     subtitle: 'End-to-end design case study across digital products and brand identity.',
-    description:
-      'Real Home is a comprehensive design case study developed for a real estate company, where I created the visual and user experience across multiple touchpoints, including a landing page, Instagram content, branding, and a mobile app. The project focused on building a cohesive and user-centered experience, ensuring consistency between the brand identity and digital interfaces while supporting both marketing and product goals.',
+            description: (
+      <>
+        Real Home is a comprehensive design case study developed for a real estate company, where I created the visual and user experience across multiple touchpoints, including a landing page, Instagram content, branding, and a mobile app. The project focused on building a cohesive and user-centered experience, ensuring consistency between the brand identity and digital interfaces while supporting both marketing and product goals.
+        <br />
+        <a href="https://www.figma.com/proto/d0YxHxN1ld3F9CQ895nnPT/RealHome?node-id=46-69&p=f&viewport=749%2C-610%2C0.28&t=LAZ7IojKcH4ah7Yv-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=46%3A69&page-id=0%3A1" target="_blank" rel="noreferrer">
+          Figma Prototype
+        </a>
+    
+      </>
+    ),
     client: 'Concept Project',
     role: 'UX/UI Design',
     tools: 'Figma',
@@ -257,7 +292,7 @@ export const projects = [
   {
     id: 11,
     slug: 'moonmagic',
-    category: 'ux ui design',
+    categories: ["ux ui design"],
     image: img11,
     title: 'Moon Magic',
     subtitle: 'UX/UI case study for a cycle tracking app focused on Apple Watch.',
@@ -272,7 +307,7 @@ export const projects = [
   {
     id: 12,
     slug: 'dinoera',
-    category: 'web development',
+    categories: ['web development'],
     image: img13,
     title: 'Dino Era',
     subtitle: 'An arcade-style web game built with HTML, CSS, and JavaScript.',
