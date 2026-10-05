@@ -11,6 +11,10 @@ import img10 from '../assets/card-torii.png';
 import img11 from '../assets/card-moonmagic.png';
 import img12 from '../assets/card-realhome.png';
 import img13 from '../assets/card-dino.png';
+import img14 from '../assets/card-zestly.png';
+import img15 from '../assets/card-tenis.png';
+import img16 from '../assets/card-bbd.png';
+import img17 from '../assets/card-social.png';
 
 import portwoohoo from '../assets/interiorprojeto/MockupWoohoo.jpg';
 import goodaydetail from '../assets/interiorprojeto/gooday-detail.png';
@@ -22,12 +26,17 @@ import mateshine2 from '../assets/videos/MateShine2.mp4';
 import mateshine3 from '../assets/videos/MateShine3.mp4';
 import dinoeragame from '../assets/videos/dinoeragame.mp4';
 import phdwebsite from '../assets/videos/phd-website.mp4';
+import tenisrio from '../assets/videos/tenis-rio-sp-open.mp4';
+import tenisjogar from '../assets/videos/tenis-vem-jogar.mp4';
 
 
 import xquicdetail from '../assets/xquic-details.png';
 import agradetail from '../assets/agra-details.png';
 import moondetail from '../assets/moonmagic-details.png';
 import toriidetail from '../assets/torii-details.png';
+import zestlydetail from '../assets/zestly-details.png';
+import bbddetail from '../assets/bbd-details.png';
+import socialdetail from '../assets/social-details.png';
 
 export const projects = [
   {
@@ -181,6 +190,91 @@ export const projects = [
     year: '2025',
     link: 'https://www.behance.net/gallery/138978125/Social-Media-Portfolio',
     videos: [mateshine1, mateshine2, mateshine3],
+  },
+  {
+    id: 14,
+    slug: 'tenis-brasil',
+    categories: ['motion design'],
+    image: img15,
+    title: 'Tennis in Brazil',
+    subtitle: 'Two kinetic typography videos celebrating tennis in Brazil.',
+    description:
+      'A motion design series about tennis in Brazil. The first video highlights the country’s biggest tournaments, Rio Open and SP Open, and the clay courts that host them. The second video invites people to pick up a racket, using the sport’s idols and fundamental strokes as hooks. Both pieces rely on bold kinetic typography, a deep green and burgundy palette inspired by tennis clubs, and rhythmic transitions that follow the pace of a rally.',
+    client: 'Concept Project',
+    role: 'Creative Direction / Motion Design',
+    tools: 'AI-assisted motion (Claude)',
+    year: '2026',
+    heroVideos: [tenisrio, tenisjogar],
+  },
+  {
+    id: 13,
+    slug: 'zestly',
+    categories: ['branding', 'ux ui design', 'social media'],
+    image: img14,
+    title: 'Zestly',
+    subtitle: 'A fresh, summer-inspired brand experience for a retail analytics SaaS — designed in just 8 hours.',
+    description: (
+      <>
+        Zestly is a SaaS platform that turns scattered retail data into clear, actionable insights.
+        The brief called for a bright identity inspired by lemons and summer colors, so I built a
+        vibrant palette of citrus yellows, lime greens, soft oranges, and lilac gradients, paired with
+        a leaf-shaped symbol and the concept of “harvesting fresh retail intelligence.”
+        <br />
+        <br />
+        The prototype was created in just 8 hours and includes a landing page, a 9-slide pitch
+        presentation, and a set of 3 Instagram posts. The goal was to make data analytics feel
+        approachable and human, with clear messaging (“No complex dashboards. No technical background
+        needed.”) and a consistent visual language across web, presentation, and social media.
+      </>
+    ),
+    client: 'Zestly - SaaS (Case Study)',
+    role: 'Branding / UX/UI Design / Social Media',
+    tools: 'Figma, Adobe Suite',
+    year: '2026',
+    longImage: zestlydetail,
+  },
+  {
+    id: 15,
+    slug: 'bbd-studios',
+    categories: ['social media', 'graphic design', 'marketing'],
+    image: img16,
+    title: 'BBD Studios',
+    subtitle: 'LinkedIn ad campaign for a South African creative and digital agency.',
+    description:
+      'A series of LinkedIn posts created for BBD Studios, a creative and digital marketing agency based in South Africa. Each piece promotes one of the agency’s services, such as brand development, content creation, data and CRM, and events, with short, confident headlines and a clear call to action. The visual system pairs a deep green background with lime and bold orange accents, combining people-focused photography and organic shapes to keep the campaign consistent, recognizable, and built for a professional B2B audience.',
+    client: 'BBD Studios - South Africa',
+    role: 'Graphic Design / Social Media',
+    tools: 'Figma, Photoshop',
+    year: '2026',
+    longImage: bbddetail,
+  },
+  {
+    id: 16,
+    slug: 'social-media-design',
+    categories: ['social media', 'graphic design'],
+    image: img17,
+    title: 'Social Media Design',
+    subtitle: 'A selection of Instagram posts for different brands and themes.',
+    description: (
+      <>
+        A curated selection of Instagram posts created for different brands and contexts. The
+        work ranges from editorial, collage-style content with bold typography and playful
+        textures to institutional campaigns for Global Her, an impact institute focused on care
+        policies across the Americas, and Unna, a technology and curation company for independent
+        hotels. Each set adapts its visual language to the brand while keeping a strong focus on
+        storytelling, hierarchy, and scroll-stopping composition.
+        <br />
+        <a href="https://www.behance.net/gallery/235481083/Social-Media-Design" target="_blank" rel="noreferrer">
+          Behance
+        </a>
+      </>
+    ),
+    client: 'Global Her, Unna, Editorial Content',
+    role: 'Graphic Design / Social Media',
+    tools: 'Photoshop, Figma, Canva',
+    year: '2025',
+    link: 'https://www.behance.net/gallery/235481083/Social-Media-Design',
+    longImage: socialdetail,
   },
   {
     id: 7,

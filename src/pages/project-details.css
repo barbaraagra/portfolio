@@ -7,6 +7,24 @@
   margin-bottom: 2rem;
 }
 
+.project-details .btn-back {
+  padding: 0.4rem 1.1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-width: 1.5px;
+}
+
+.project-details__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  padding-top: 40px;
+}
+
+.project-details__footer .btn-back {
+  margin-bottom: 0;
+}
+
 .project-details__hero {
   display: grid;
   grid-template-columns: 1fr 1fr;

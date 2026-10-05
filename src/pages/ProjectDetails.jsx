@@ -34,13 +34,14 @@ const ProjectDetails = () => {
     longImage,
     videos = [],
     heroVideo,
+    heroVideos = [],
   } = project;
 
   return (
     <section className="project-details">
       <div className="container">
-        <Link to="/#portfolio" className="btn">
-          Back to Home
+        <Link to="/#portfolio" className="btn btn-back">
+          ← Back to Home
         </Link>
 
         <div className="project-details__hero">
@@ -122,6 +123,17 @@ const ProjectDetails = () => {
           />
         </div>
       )}
+      {heroVideos.map((src) => (
+        <div className="project-details__hero-video" key={src}>
+          <video src={src} controls muted loop playsInline preload="metadata" />
+        </div>
+      ))}
+
+      <div className="container project-details__footer">
+        <Link to="/#portfolio" className="btn btn-back">
+          ← Back to Home
+        </Link>
+      </div>
     </section>
   );
 };
